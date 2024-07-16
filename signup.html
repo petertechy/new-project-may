@@ -47,16 +47,29 @@
 
     <div class="mx-auto col-7 p-3 rounded shadow my-4">
         <h1 class="text-danger display-1 fw-bold">Sign UP</h1>
-        <input class="mb-3 form-control" type="text" placeholder="Input your First Name">
+        <input id="firstInput" class="mb-3 form-control" type="text" placeholder="Input your First Name">
         <input class="mb-3 form-control" type="text" placeholder="Input your Last Name">
         <input class="mb-3 form-control" type="email" placeholder="Input your Email">
         <input class="mb-3 form-control" type="date">
 
-        <button class="btn btn-danger my-3 form-control ">Sign Up</button>
+        <button onclick="newAction()" class="btn btn-danger my-3 form-control ">Sign Up</button>
         
 
 
 
     </div>
+
+    <script>
+      newAction = ()=>{
+        let firstInput = document.getElementById("firstInput").value;
+        if(firstInput == "praise"){
+          alert("You are not allowed")
+
+        }else{
+          location.href= './signin.html';
+
+        }
+      }
+    </script>
 </body>
 </html>
