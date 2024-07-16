@@ -1,0 +1,7 @@
+.container{
+    width: 70%;
+    height: 50vh;
+    background: url("https://images.pexels.com/photos/6000789/pexels-photo-6000789.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load");
+    background-position: center;
+    background-size: cover;
+}
